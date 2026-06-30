@@ -1,4 +1,7 @@
 package com.zsgs.notification_kafka_demo.repository;
 
-public class UserRepository {
+import com.zsgs.notification_kafka_demo.model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<User,String> {
 }
